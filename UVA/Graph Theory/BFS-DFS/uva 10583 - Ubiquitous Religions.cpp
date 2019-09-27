@@ -2,7 +2,7 @@
 Used Technique: DFS
 
 Explanation: 
-Assume every person is a node if a graph. Give bidirectional edge between all the persons who believe in same religion.
+Assume every person is a node in a graph. Give bidirectional edge between all the persons who believe in same religion.
 The number of connected component of the graph is the answer. we can find it by using DFS.
 */
 
