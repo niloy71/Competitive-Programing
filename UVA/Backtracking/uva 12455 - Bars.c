@@ -1,10 +1,9 @@
 /*
-Use backtracking to genarate all possible combination of bars and check if the sum of any combination is equel to the
+Use backtracking to generate all possible combination of bars and check if the sum of any combination is equel to the
 length of the bar we want to obtain.
 */
 
 #include <stdio.h>
-
 
 int t, n, p, f, i, ara[25];
 
