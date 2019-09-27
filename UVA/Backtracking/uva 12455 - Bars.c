@@ -1,6 +1,10 @@
 /*
+Used Technique: Backtracking
+
+Explanation:
 Use backtracking to generate all possible combination of bars and check if the sum of any combination is equal to the
 length of the bar we want to obtain.
+
 */
 
 #include <stdio.h>
