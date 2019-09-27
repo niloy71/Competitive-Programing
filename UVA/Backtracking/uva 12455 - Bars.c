@@ -1,5 +1,5 @@
 /*
-Use backtracking to generate all possible combination of bars and check if the sum of any combination is equel to the
+Use backtracking to generate all possible combination of bars and check if the sum of any combination is equal to the
 length of the bar we want to obtain.
 */
 
