@@ -1,4 +1,7 @@
 /*
+Used Technique: Brute-force
+
+Explanation:
 Here you need to find the maximum product of a consecutive sequence from the Array.
 We can do it using brute-force approach. Here we use two counter for finding the maximum product.
 One counter count only the product of consecutive positive numbers.
@@ -6,6 +9,7 @@ Another counter count the product of consecutive sequence which has even number 
 This counter may need iterate from both side of the array.
 If any zero encountered both counter will reset.
 The answer is the maximum value counted by the counter. Remember to check, if you find any positive sequence in the array or not.
+
 */
 
 
