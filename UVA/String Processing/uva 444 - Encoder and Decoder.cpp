@@ -4,7 +4,10 @@ Used Technique: String processing
 Explanation: 
 Check the first number of a string is digit or not.
 
-If digit, reverse the string first. check if f
+If digit, reverse the string and convert the numbers to character according to its ascii numbers. 
+Remember is you encounter 1 as the first number then you have to take 3 digit from the string to convert. Otherwise take 2 digit.
+
+Else if the first number of the string is not digit then print the ascii number of the character according to instruction.
 
 */
 
