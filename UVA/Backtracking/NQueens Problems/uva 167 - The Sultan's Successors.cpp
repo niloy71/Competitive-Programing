@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Queens[100], ara[100][100], n;
+int Queens[8], ara[8][8], sum, ans;
 
 bool placed(int k, int i)
 {
@@ -16,27 +16,37 @@ bool placed(int k, int i)
 
 void nQueens(int k)
 {
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < 8; i++){
         if(placed(k,i)){
             Queens[k] = i;
-            if(k == n-1){
-                for(int q = 0; q < n; q++){
-                    printf("%d ", Queens[q]);
-                }
-                printf("\n");
+            sum += ara[k][i];
+            if(k == 7){
+                ans = max(ans, sum);
             }
             else{
                 nQueens(k+1);
             }
+            sum -= ara[k][i];
         }
     }
 }
 
 int main()
 {
-    int i, j;
+    int t, i, j;
 
-    while(scanf("%d", &n) && n){
+    scanf("%d", &t);
+
+    while(t--){
+        for(i = 0; i < 8; i++){
+            for(j = 0; j < 8; j++){
+                scanf("%d", &ara[i][j]);
+            }
+        }
+
+        sum = ans = 0;
         nQueens(0);
+
+        printf("%5d\n", ans);
     }
 }
